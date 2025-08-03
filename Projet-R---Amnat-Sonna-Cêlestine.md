@@ -1,0 +1,235 @@
+---
+title: "Analyse du choix de filière par défaut ou par passion"
+subtitle: "Est-ce que le choix de filière par passion ou par défaut a un impact sur le comportement académique d'un étudiant ?"
+author: "Cêlestine"
+date: '18/12/2023'
+output: 
+  html_document:
+    toc: yes
+    toc_float: yes
+    theme: "flatly"
+    df_print: paged
+    dev: png
+    keep_md: yes
+    fig.width: 15
+    fig.height: 7 
+    standalone: yes
+    pdf_document:
+editor_options: 
+  chunk_output_type: console
+---
+
+
+
+
+
+
+
+<br>    
+
+# INTRODUCTION
+
+---
+
+<div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px; background-color: #879c9d;">
+
+<span style="color: white ;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    **Le choix d'une filière universitaire est souvent un moment décisif dans la vie d'un étudiant, influençant non seulement leur parcours académique, mais aussi leurs perspectives professionnelles futures.**
+
+<span style="color: white ;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    **Cette étude vise à explorer si les étudiants qui choisissent leur filière par passion sont plus susceptibles de s'engager activement dans leur travail académique et d'adopter des comportements bénéfiques pour leur apprentissage.**
+  
+</p>
+  
+</div>
+
+
+<br>    
+<br>    
+
+
+
+# ANALYSE ET RESULTATS
+
+---
+ 
+Dans le cadre de cette étude, l'effectif des étudiants ayant choisi leur filière par passion, catégorisé comme "**Réorientation**" et "**Premier Choix**", représente une majorité significative, indiquant une tendance à poursuivre des études alignées sur leurs intérêts et aspirations. 
+
+En contraste, les catégories "**Choix Intermédiaire**" et "**Dernier Choix**" reflètent les parcours de ceux qui, peut-être par circonstances ou compromis, se retrouvent dans des filières moins alignées avec leurs passions initiales.
+
+<br>    
+
+
+
+
+
+
+
+<table class="table table-striped table-hover table-condensed table-responsive table-bordered" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Votre licence est... </th>
+   <th style="text-align:right;"> Effectifs </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr grouplength="2"><td colspan="2" style="border-bottom: 1px solid;color: white !important;background-color: rgba(64, 111, 113, 255) !important;"><strong>Un choix par passion</strong></td></tr>
+<tr>
+   <td style="text-align:left;background-color: rgba(212, 225, 225, 255) !important;padding-left: 2em;" indentlevel="1"> Réorientation </td>
+   <td style="text-align:right;"> 43 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;background-color: rgba(212, 225, 225, 255) !important;padding-left: 2em;" indentlevel="1"> Premier Choix </td>
+   <td style="text-align:right;"> 93 </td>
+  </tr>
+  <tr grouplength="2"><td colspan="2" style="border-bottom: 1px solid;color: white !important;background-color: rgba(64, 111, 113, 255) !important;"><strong>Un choix par défaut</strong></td></tr>
+<tr>
+   <td style="text-align:left;background-color: rgba(212, 225, 225, 255) !important;padding-left: 2em;" indentlevel="1"> Choix Intermediaire </td>
+   <td style="text-align:right;"> 54 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;background-color: rgba(212, 225, 225, 255) !important;padding-left: 2em;" indentlevel="1"> Dernier Choix </td>
+   <td style="text-align:right;"> 18 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;background-color: rgba(212, 225, 225, 255) !important;font-weight: bold;color: white !important;background-color: rgba(55, 90, 93, 255) !important;"> Total </td>
+   <td style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(55, 90, 93, 255) !important;"> 208 </td>
+  </tr>
+</tbody>
+</table>
+
+<br>    
+<br>    
+
+## Année d'étude 
+
+Les étudiants semblent moins enclins à poursuivre sur la durée un cursus sélectionné par défaut, privilégiant une réorientation vers des domaines d'étude qui reflètent mieux leurs véritables intérêts et aspirations.
+
+<br>    
+
+
+
+
+
+
+
+<img src="Projet-R---Amnat-Sonna-Cêlestine_files/figure-html/graphique année-1.png" style="display: block; margin: auto auto auto 0;" />
+
+<br>
+<br>
+
+
+## Spécialités au baccalauréat
+
+_Pour cette partie nous nous concentrons uniquement sur les étudiants en licence d'économie, qui représentent 80.8% des répondants pour une simplicité d'analyse._
+  
+Les **étudiants avec un intérêt préalable en mathématiques ou en sciences économiques et sociales sont plus enclins à choisir délibérément la filière économie.** 
+
+
+
+
+
+
+<img src="Projet-R---Amnat-Sonna-Cêlestine_files/figure-html/graphique spécialité-1.png" style="display: block; margin: auto auto auto 0;" />
+
+<br>
+<br>
+
+
+## Temps de travail personnel 
+
+On observe une tendance selon laquelle **l'engagement dans une filière choisie**, que ce soit par une décision mûrie après réorientation ou comme premier choix, **est corrélé avec un temps de travail personnel plus élevé**. Cela peut refléter un niveau d'intérêt et de motivation plus élevé des étudiants pour leur éducation.
+
+À l’inverse, les étudiants pour qui la filière était leur dernier choix consacrent, en moyenne, moins de temps au travail personnel. Ceci peut indiquer un manque d’intérêt ou d’engagement envers la filière choisie. 
+
+
+
+<img src="Projet-R---Amnat-Sonna-Cêlestine_files/figure-html/graphique travail-1.png" style="display: block; margin: auto auto auto 0;" />
+
+<br>
+<br>
+
+## Connaissance notion de cours  
+
+Les étudiants qui ont une préférence claire pour leur domaine d'étude, manifestée par un choix délibéré comme premier choix ou une réorientation déterminée, tendent à avoir une meilleure performance dans les questions académiques liées. Cela peut être dû à une motivation plus forte ou à un engagement plus profond dans leur domaine d'étude.
+
+
+
+
+
+
+
+
+
+<table class="table table-striped table-hover table-condensed table-responsive table-bordered" style="margin-left: auto; margin-right: auto;">
+<caption><span style="color: #406f71; text-decoration: underline;">Taux de bonne réponse aux questions d'économie et de finance par choix de filière</span></caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(64, 111, 113, 255) !important;">  </th>
+   <th style="text-align:center;font-weight: bold;color: white !important;background-color: rgba(64, 111, 113, 255) !important;"> Réorientation </th>
+   <th style="text-align:center;font-weight: bold;color: white !important;background-color: rgba(64, 111, 113, 255) !important;"> Premier Choix </th>
+   <th style="text-align:center;font-weight: bold;color: white !important;background-color: rgba(64, 111, 113, 255) !important;"> Choix Intermediaire </th>
+   <th style="text-align:center;font-weight: bold;color: white !important;background-color: rgba(64, 111, 113, 255) !important;"> Dernier Choix </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;color: rgba(55, 90, 93, 255) !important;background-color: rgba(212, 225, 225, 255) !important;"> Taux de bonne réponse question d'économie </td>
+   <td style="text-align:center;"> 70% </td>
+   <td style="text-align:center;"> 76% </td>
+   <td style="text-align:center;"> 70% </td>
+   <td style="text-align:center;"> 61% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: rgba(55, 90, 93, 255) !important;background-color: rgba(212, 225, 225, 255) !important;"> Taux de bonne réponse question de finance </td>
+   <td style="text-align:center;"> 81% </td>
+   <td style="text-align:center;"> 73% </td>
+   <td style="text-align:center;"> 59% </td>
+   <td style="text-align:center;"> 56% </td>
+  </tr>
+</tbody>
+</table>
+<p style='font-size: 0.6em; color: #406f71 ;'> 
+Question d'économie : Qui a inventé l'expression ''la main invisible'' ? Adam Smith <br>Question de finance : Quel terme désigne la répartition temporelle d'une charge financière pour remplacer un bien ou un équipement ? Amortissement 
+</p>
+
+<br>
+<br>
+
+
+## Temps de trajet 
+
+Les étudiants dont la filière était leur premier choix ont tendance à avoir un temps de trajet plus court. Cela pourrait s'expliquer par le fait qu'ils ont délibérément choisi cette licence car elle se situe dans une faculté proche de leur domicile, ou qu'ils ont fait un effort pour réduire le temps de déplacement afin de maximiser le temps disponible pour étudier.
+
+À l'inverse, ceux en réorientation ou qui ont choisi leur filière par défaut tendent à avoir un temps de trajet plus long, ce qui pourrait être expliqué par le fait qu'ils n'ont pas initialement prévu de faire cette licence et n'ont donc pas choisi leur logement en conséquence.
+
+<br>    
+
+
+
+
+<img src="Projet-R---Amnat-Sonna-Cêlestine_files/figure-html/graphique trajet-1.png" style="display: block; margin: auto auto auto 0;" />
+
+<br>    
+<br>    
+
+
+# CONCLUSION 
+
+---
+
+<div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px; background-color: #879c9d;">
+
+<span style="color: white ;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    **Les choix des étudiants relatifs à leur parcours universitaire ne sont pas anodins, ils reflètent et influencent à la fois leur niveau d'engagement et leur réussite académique.**
+
+<span style="color: white ;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    **Cette étude souligne l'importance pour les institutions d'accompagner les étudiants dans la découverte et la poursuite de leurs passions, tout en offrant un soutien adapté à ceux qui se trouvent dans des filières moins alignées avec leurs aspirations initiales, afin d'optimiser leur potentiel de réussite et de satisfaction académique.**
+
+<span style="color: white ;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    **Toutefois, il est important de reconnaître les limites de cette étude. Notre échantillon pourrait ne pas refléter la diversité complète de la population étudiante, et les résultats pourraient varier dans un contexte différent ou avec un échantillon plus large.**
+</span> 
+
+</p>
+  
+</div>
